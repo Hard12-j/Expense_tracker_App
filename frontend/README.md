@@ -54,3 +54,24 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+1. Open the VS Code terminal (PowerShell) and go to the frontend folder
+
+powershell
+cd "G:\hj\java projects\Expensetracker\frontend"
+
+If you open VS Code on the Expensetracker folder, you only need cd frontend.
+
+2. Start the server
+
+powershell
+npx expo start
+
+3. Open the app on your phone
+
+Scan the QR code with Expo Go. Your phone and PC must be on the same Wi-Fi.
+
+4. Stop it when you're done
+
+Press Ctrl + C in the terminal.
