@@ -4,7 +4,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from pydantic import BaseModel, Field
 from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
-from service.Expense import Expense
+from app.service.Expense import Expense
 from dotenv import load_dotenv, dotenv_values
 
 class LLMService:
