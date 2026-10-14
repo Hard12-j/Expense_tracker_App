@@ -38,18 +38,16 @@ jobs:
          cat infrastructure-outputs.json
 
      - name: Upload infrastructure outputs to S3
-     
-  env:
-    INFRA_FILE_NAME: "infrastructure-outputs.json"
-  run: |
-    ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
-    BUCKET_NAME="expensetrackerinfra-${ACCOUNT_ID}"
+       env:
+         INFRA_FILE_NAME: "infrastructure-outputs.json"
+       run: |
+        ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+        BUCKET_NAME="expensetrackerinfra-${ACCOUNT_ID}"
 
-    if ! aws s3api head-bucket --bucket "$BUCKET_NAME" 2>/dev/null; then
-      aws s3 mb "s3://$BUCKET_NAME" --region "$AWS_REGION"
-    else
-      echo "Bucket $BUCKET_NAME already exists"
-    fi
-
-    echo "Uploading to bucket: $BUCKET_NAME"
-    aws s3 cp "$INFRA_FILE_NAME" "s3://$BUCKET_NAME/infrastructure-outputs.json"
+        if ! aws s3api head-bucket --bucket "$BUCKET_NAME" 2>/dev/null; then
+        aws s3 mb "s3://$BUCKET_NAME" --region "$AWS_REGION"
+        else
+        echo "Bucket $BUCKET_NAME already exists"
+        fi
+        echo "Uploading to bucket: $BUCKET_NAME"
+        aws s3 cp "$INFRA_FILE_NAME" "s3://$BUCKET_NAME/infrastructure-outputs.json"
