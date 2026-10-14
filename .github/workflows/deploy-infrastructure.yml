@@ -11,6 +11,7 @@ env:
 jobs:
  deploy-infrastructure:
    runs-on: ubuntu-latest
+   environment: ExpenseDeps
    steps:
      - name: Checkout code
        uses: actions/checkout@v2
