@@ -7,13 +7,12 @@ import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/expense/v1")
 public class ExpenseController {
     private final ExpenseService expenseService;
 
@@ -22,8 +21,8 @@ public class ExpenseController {
         this.expenseService = expenseService;
     }
 
-    @GetMapping("/expense/v1/")
-    public ResponseEntity<List<ExpenseDto>> getExpense(@PathVariable("user_id") @NonNull String userId) {
+    @GetMapping("/getExpense")
+    public ResponseEntity<List<ExpenseDto>> getExpense(@RequestHeader(value = "X-user-Id") @NonNull String userId) {
         try{
             List<ExpenseDto> expenseDtoList = expenseService.getExpense(userId);
             return new ResponseEntity<>(expenseDtoList, HttpStatus.OK);
@@ -31,5 +30,20 @@ public class ExpenseController {
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+    }
+
+    @PostMapping("/addExpense")
+    public ResponseEntity<Boolean> addExpense(@RequestHeader(value = "X-user-Id") @NonNull String userId,@RequestBody ExpenseDto expenseDto) {
+        try{
+            expenseDto.setUserId(userId);
+            return new ResponseEntity<>(expenseService.createExpense(expenseDto), HttpStatus.OK);
+        }catch(Exception e){
+            return new ResponseEntity<>(false, HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @GetMapping("/health")
+    public ResponseEntity<Boolean> checkHealth(){
+        return new ResponseEntity<>(true, HttpStatus.OK);
     }
 }

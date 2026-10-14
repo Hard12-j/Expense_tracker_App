@@ -43,6 +43,10 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return new CustomUserDetails(user);
     }
 
+    public String getUserByUsername(String userName){
+        return Optional.of(userRepository.findByUserName(userName)).map(UserInfo::getUserId).orElse(null);
+    }
+
     public UserInfo checkIfUserAlreaadyExists(UserInfoDto userInfoDto){
         if (userInfoDto == null || userInfoDto.getUserName() == null || userInfoDto.getUserName().trim().isEmpty()) {
             return null;

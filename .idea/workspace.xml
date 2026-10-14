@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a3d59d26-88ac-4aff-bac3-44a8ddb313c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/AuthService/app/bin/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/app/bin/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/app/bin/main/org/example/Serializer/UserInfoSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/app/bin/main/org/example/Serializer/UserInfoSerializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/app/bin/main/org/example/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/app/bin/main/org/example/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/app/bin/main/org/example/service/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/app/bin/main/org/example/service/UserDetailsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/app/src/main/java/org/example/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/app/src/main/java/org/example/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpenseApp/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/ExpenseApp/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpenseApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ExpenseApp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpenseApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ExpenseApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpenseApp/src/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExpenseApp/src/app/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpenseApp/src/app/explore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExpenseApp/src/app/explore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpenseApp/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExpenseApp/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpenseApp/src/components/app-tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExpenseApp/src/components/app-tabs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpenseApp/src/components/app-tabs.web.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExpenseApp/src/components/app-tabs.web.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpenseApp/src/uniwind-types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ExpenseApp/src/uniwind-types.d.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="3KVGhBPKr7aF59BC7UUgzi0JIey" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3d59d26-88ac-4aff-bac3-44a8ddb313c5" name="Changes" comment="" />
+      <created>1791635452941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1791635452941</updated>
+    </task>
+    <servers />
+  </component>
+</project>
